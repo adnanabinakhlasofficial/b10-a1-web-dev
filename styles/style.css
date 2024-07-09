@@ -182,16 +182,18 @@
     margin: 16px 0 32px 0;
 }
 
-#web-development .web-container .web-layers-container .web-layer img{
+#web-development .web-container .web-layers-container .web-layer img {
     vertical-align: middle;
 }
 
-#web-development .web-container .web-layers-container .web-layer:nth-child(1){
+#web-development .web-container .web-layers-container .web-layer:nth-child(1) {
     flex-direction: row-reverse !important;
 }
-#web-development .web-container .web-layers-container .web-layer:nth-child(3){
+
+#web-development .web-container .web-layers-container .web-layer:nth-child(3) {
     flex-direction: row-reverse !important;
 }
+
 /* web development section styles end */
 
 /* inspiration section styles start */
@@ -199,7 +201,7 @@
     margin: 80px 0;
 }
 
-#inspiration-section .inspiration-container .inspiration-video{
+#inspiration-section .inspiration-container .inspiration-video {
     padding: 32px;
     border: 1px solid var(--primary-20-color);
     border-radius: 16px;
@@ -209,4 +211,51 @@
 #inspiration-section .inspiration-container .inspiration-video iframe {
     border-radius: 16px;
 }
+
 /* inspiration section styles end */
+
+/* target section styles start */
+#target-section {
+    margin: 80px 0;
+}
+
+#target-section .target-container .target-skills {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+
+#target-section .target-container .target-skills .skills {
+    border-radius: 16px;
+    background-color: #FF4C1E0D;
+    padding: 40px;
+}
+
+#target-section .target-container .target-skills .skills:nth-child(2){
+    background-color: #004CE80D;
+}
+
+#target-section .target-container .target-skills .skills:nth-child(3){
+    background-color: #FFDF000D;
+}
+
+#target-section .target-container .target-skills .skills h3 {
+    color: var(--primary-color);
+    margin: 24px 0 8px 0;
+}
+
+#target-section .target-container .target-skills .skills p {
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+#target-section .target-container .target-skills .skills a {
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    text-decoration: none;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* target section styles end */
