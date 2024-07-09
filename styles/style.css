@@ -11,6 +11,7 @@
 
 :root {
     --primary-color: #0D1321;
+    --primary-70-color: #0d1321d0;
     --white-color: #FFFFFF;
 }
 
@@ -19,11 +20,29 @@
     margin: 0 auto;
 }
 
+.title {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 37px;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.sub-title {
+    color: var(--primary-70-color);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
 .description {
     color: var(--primary-color);
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+    text-align: center;
+    opacity: 0.7;
 }
 
 .btn {
@@ -40,6 +59,25 @@
     transition: 0.3s;
     text-decoration: none;
     background-color: var(--primary-color) !important;
+}
+
+.btn-secondary {
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    opacity: 0.7;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    color: var(--white-color);
+    background-color: var(--primary-color);
 }
 
 .btn:hover {
@@ -85,7 +123,7 @@
 /* nav section styles end */
 
 /* banner section styles start */
-#banner-section{
+#banner-section {
     background-image: url('../assets/Hero-bg.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -109,7 +147,48 @@
     line-height: 68px;
 }
 
-#banner-section .banner-container .banner-content p{ 
+#banner-section .banner-container .banner-content p {
     margin: 24px 0 30px 0;
 }
+
 /* banner section styles end */
+
+
+/* web development section styles start */
+#web-development {
+    margin: 100px 0;
+}
+
+#web-development .web-container {
+    padding: 80px;
+
+}
+
+#web-development .web-container .web-layers-container {
+    margin: 100px 0;
+    padding: 0 100px;
+}
+
+#web-development .web-container .web-layers-container .web-layer {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin-bottom: 30px;
+}
+
+#web-development .web-container .web-layers-container .web-layer p {
+    text-align: left;
+    margin: 16px 0 32px 0;
+}
+
+#web-development .web-container .web-layers-container .web-layer img{
+    vertical-align: middle;
+}
+
+#web-development .web-container .web-layers-container .web-layer:nth-child(1){
+    flex-direction: row-reverse !important;
+}
+#web-development .web-container .web-layers-container .web-layer:nth-child(3){
+    flex-direction: row-reverse !important;
+}
+/* web development section styles end */
