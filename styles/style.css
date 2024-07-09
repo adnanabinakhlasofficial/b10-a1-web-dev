@@ -12,6 +12,7 @@
 :root {
     --primary-color: #0D1321;
     --primary-70-color: #0d1321d0;
+    --primary-20-color: #0d132160;
     --white-color: #FFFFFF;
 }
 
@@ -156,11 +157,11 @@
 
 /* web development section styles start */
 #web-development {
-    margin: 100px 0;
+    margin: 80px 0;
 }
 
 #web-development .web-container {
-    padding: 80px;
+    padding: 0 80px;
 
 }
 
@@ -192,3 +193,20 @@
     flex-direction: row-reverse !important;
 }
 /* web development section styles end */
+
+/* inspiration section styles start */
+#inspiration-section {
+    margin: 80px 0;
+}
+
+#inspiration-section .inspiration-container .inspiration-video{
+    padding: 32px;
+    border: 1px solid var(--primary-20-color);
+    border-radius: 16px;
+    margin-top: 50px;
+}
+
+#inspiration-section .inspiration-container .inspiration-video iframe {
+    border-radius: 16px;
+}
+/* inspiration section styles end */
