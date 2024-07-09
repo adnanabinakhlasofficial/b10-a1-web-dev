@@ -91,7 +91,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 #header .navigation h2 {
@@ -129,7 +129,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 652px;
+    height: 850px;
 }
 
 #banner-section .banner-container {
@@ -139,6 +139,9 @@
     text-align: center;
     gap: 30px;
     width: 998px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #banner-section .banner-container .banner-content h1 {
@@ -317,8 +320,8 @@
     background-color: var(--white-color);
     outline: none;
     border: none;
+    cursor: pointer;
 }
-
 /* support section styles end */
 
 
