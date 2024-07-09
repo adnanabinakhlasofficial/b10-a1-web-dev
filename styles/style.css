@@ -1,10 +1,115 @@
 /* azeret mono font embed code */
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+/* universal styles start */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Azeret Mono", monospace;
 }
 
+:root {
+    --primary-color: #0D1321;
+    --white-color: #FFFFFF;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.description {
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.btn {
+    display: inline-block;
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    padding: 17px 24px;
+    border-radius: 8px;
+    transition: 0.3s;
+    text-decoration: none;
+    background-color: var(--primary-color) !important;
+}
+
+.btn:hover {
+    background-color: transparent !important;
+    color: var(--primary-color);
+}
+
+/* nav section styles start */
+#header .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+#header .navigation h2 {
+    color: var(--primary-color);
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 33px;
+}
+
+#header .navigation button {
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    padding: 17px 24px;
+    border-radius: 8px;
+    opacity: 0.8;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#header .navigation button:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* nav section styles end */
+
+/* banner section styles start */
+#banner-section{
+    background-image: url('../assets/Hero-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 652px;
+}
+
+#banner-section .banner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    width: 998px;
+}
+
+#banner-section .banner-container .banner-content h1 {
+    color: var(--primary-color);
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 68px;
+}
+
+#banner-section .banner-container .banner-content p{ 
+    margin: 24px 0 30px 0;
+}
+/* banner section styles end */
