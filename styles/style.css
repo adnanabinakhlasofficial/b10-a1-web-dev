@@ -177,7 +177,9 @@
     display: flex;
     justify-content: space-between;
     gap: 100px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
+    border: 1px solid gray;
+    padding: 24px 46px;
 }
 
 #web-development .web-container .web-layers-container .web-layer p {
